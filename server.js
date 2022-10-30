@@ -2,7 +2,7 @@ const   express = require('express'),
         joi = require('joi'),
         cors = require('cors'),
         app = express(),
-        port = 7000;
+        port = process.env.PORT || 7000;
 
 
 const schema = joi.object({
