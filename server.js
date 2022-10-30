@@ -1,5 +1,6 @@
 const   express = require('express'),
         joi = require('joi'),
+        cors = require('cors'),
         app = express(),
         port = 7000;
 
@@ -31,7 +32,7 @@ app.use(function (req, res, next) {
                 'Access-Control-Allow-Headers',
                 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers,X-Access-Token,XKey,Authorization'
         );
-        
+
         next();
 });
 
